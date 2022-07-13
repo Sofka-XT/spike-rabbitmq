@@ -1,0 +1,13 @@
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+	implementation 'com.domain:grupoexito-trazabilidad:2.4'
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation project(":domain-controller")
+	implementation project(":receivers-reactive-web")
+	implementation project(":adapters-async-event-bus")
+	implementation 'com.h2database:h2'
+	implementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+	runtime('org.springframework.boot:spring-boot-devtools')
+}

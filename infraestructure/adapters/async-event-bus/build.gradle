@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':domain-controller')
+    compile group: 'org.reactivecommons', name: 'async-commons-starter', version: '0.4.7'
+    compile('org.springframework:spring-context')
+}
